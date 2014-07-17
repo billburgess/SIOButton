@@ -20,11 +20,19 @@
 	// Do any additional setup after loading the view, typically from a nib.
     
     // configure button in the XIB
-    topButton.primaryColor = [UIColor colorWithRed:0.0 green:60.0/255 blue:73.0/255 alpha:1.0f];
-    topButton.cornerRadius = 2.0f;
-    [topButton setTitle:NSLocalizedString(@"Top Button", @"Top Button") forState:UIControlStateNormal];
-    [topButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-    [topButton.titleLabel setFont:[UIFont systemFontOfSize:17.0]];
+    defaultButton.cornerRadius = 2.0f;
+    [defaultButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+    
+    halfAlphaButton.cornerRadius = 8.0f;
+    [halfAlphaButton setSelectedAlpha:0.5f];
+    [halfAlphaButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+    [halfAlphaButton selectButtonAndSetUserInteraction:NO];
+    
+    quarterAlphaButton.cornerRadius = 0.0f;
+    [quarterAlphaButton setSelectedAlpha:0.25f];
+    [quarterAlphaButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+    [quarterAlphaButton selectButtonAndSetUserInteraction:NO];
+    
 }
 
 - (void)didReceiveMemoryWarning

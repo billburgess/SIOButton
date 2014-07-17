@@ -10,7 +10,9 @@
 #import "SIOButton.h"
 
 @interface ViewController : UIViewController {
-    IBOutlet SIOButton *topButton;
+    IBOutlet SIOButton *defaultButton;
+    IBOutlet SIOButton *halfAlphaButton;
+    IBOutlet SIOButton *quarterAlphaButton;
 }
 
 - (IBAction)topButtonPressed:(id)sender;

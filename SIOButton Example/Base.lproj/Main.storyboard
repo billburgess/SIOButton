@@ -17,27 +17,49 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button appearanceType="aqua" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Co4-nA-o1l" customClass="SIOButton">
-                                <rect key="frame" x="108" y="72" width="104" height="30"/>
+                                <rect key="frame" x="108" y="75" width="104" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="104" id="lse-qQ-L0t"/>
+                                    <constraint firstAttribute="width" constant="104" id="LKq-KA-sE3"/>
                                 </constraints>
-                                <state key="normal" title="Button">
+                                <state key="normal" title="Default">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <action selector="topButtonPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="NhR-5g-Xi0"/>
                                 </connections>
                             </button>
+                            <button appearanceType="aqua" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="39T-GL-L9w" customClass="SIOButton">
+                                <rect key="frame" x="108" y="130" width="104" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="1/2 Alpha">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button appearanceType="aqua" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a5K-KP-kki" customClass="SIOButton">
+                                <rect key="frame" x="108" y="185" width="104" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="1/4 Alpha">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="Co4-nA-o1l" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="0pP-Hp-ZKp"/>
-                            <constraint firstItem="Co4-nA-o1l" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="52" id="3Sg-6t-Qpe"/>
+                            <constraint firstItem="39T-GL-L9w" firstAttribute="leading" secondItem="a5K-KP-kki" secondAttribute="leading" id="A1L-Xq-ROc"/>
+                            <constraint firstItem="Co4-nA-o1l" firstAttribute="trailing" secondItem="39T-GL-L9w" secondAttribute="trailing" id="CYf-it-coW"/>
+                            <constraint firstItem="a5K-KP-kki" firstAttribute="top" secondItem="39T-GL-L9w" secondAttribute="bottom" constant="25" id="NsY-3d-8KO"/>
+                            <constraint firstItem="39T-GL-L9w" firstAttribute="top" secondItem="Co4-nA-o1l" secondAttribute="bottom" constant="25" id="O5l-KX-hUP"/>
+                            <constraint firstItem="39T-GL-L9w" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" constant="130" id="ls2-iu-Dxb"/>
+                            <constraint firstItem="Co4-nA-o1l" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="nd7-xX-BEb"/>
+                            <constraint firstItem="Co4-nA-o1l" firstAttribute="leading" secondItem="39T-GL-L9w" secondAttribute="leading" id="qsr-xG-cXo"/>
+                            <constraint firstItem="39T-GL-L9w" firstAttribute="trailing" secondItem="a5K-KP-kki" secondAttribute="trailing" id="sUe-n1-0IR"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="topButton" destination="Co4-nA-o1l" id="Ylg-Ku-jyv"/>
+                        <outlet property="defaultButton" destination="Co4-nA-o1l" id="uz5-1I-Zc0"/>
+                        <outlet property="halfAlphaButton" destination="39T-GL-L9w" id="uul-f1-Pfs"/>
+                        <outlet property="quarterAlphaButton" destination="a5K-KP-kki" id="Pyy-y5-xV2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
