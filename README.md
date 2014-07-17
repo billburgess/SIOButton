@@ -2,18 +2,18 @@
 
 ## Overview
 
-'SIOButton' is a UIButton wrapper that changes the button alpha on selection to hightlight touch events rather than button images for each selection state.
+`SIOButton` is a `UIButton` wrapper that changes the button alpha on selection to hightlight touch events rather than button images for each selection state.
 
 ## Usage
 
-'SIOButton' can be added directly using Interface Builder, or generated purely in code
+`SIOButton` can be added directly using Interface Builder, or generated purely in code
 
-Using Interface Builder, just change the class from UIButton to SIOButton and hook up your outlets accordingly. You will also need to set a few items to ensure correct layout:
+Using Interface Builder, just change the class from `UIButton` to `SIOButton` and hook up your outlets accordingly. You will also need to set a few items to ensure correct layout:
   
 	button.primaryColor = [UIColor blueColor];
 	button.cornerRadius = 4.0f;
 
-Using straight code, it is very similar to a normal UIButton:
+Using straight code, it is very similar to a normal `UIButton`:
 
 	SIOButton *button = [SIOButton alloc] initWithPrimaryColor:[UIColor blueColor]];
 	// you can subscribe to the delegate methods to detect changes, or add your own targets
