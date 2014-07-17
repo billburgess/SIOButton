@@ -7,7 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "SIOButton.h"
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController {
+    IBOutlet SIOButton *topButton;
+}
+
+- (IBAction)topButtonPressed:(id)sender;
 
 @end
