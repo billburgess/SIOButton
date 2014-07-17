@@ -41,10 +41,10 @@ Sometimes it is beneficial to disable the button in code, or lock the user out f
 	[button selectButtonAndSetUserInteraction:NO];
 	
 The alpha values can be overridden from their defaults:
-	- normalAlpha; // default is 1.0
-	- selectedAlpha; // default is 0.7
-	- highlightedAlpha; // default is 1.0
-	- disabledAlpha; // default is 0.5
+	- normalAlpha;
+	- selectedAlpha;
+	- highlightedAlpha;
+	- disabledAlpha;
 
 ## Installation
 
